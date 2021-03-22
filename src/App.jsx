@@ -53,9 +53,9 @@ function App() {
     <div>
       <Nav />
 
-      <div className="flex justify-center items-center h-screen ">
-        <div className="overflow-auto bg-white w-2/3 h-4/5 rounded-xl shadow-lg -mt-10">
-          <Table variant="simple">
+      <div className="flex justify-center items-center h-screen flex-col">
+        <div className="overflow-auto bg-white sm:w-2/3 h-4/5 rounded-xl shadow-lg mt-20 w-5/6">
+          <Table variant="simple" className="text-sm">
             <Thead>
               <Tr>
                 <Th>Country</Th>
@@ -73,6 +73,7 @@ function App() {
             </Tbody>
           </Table>
         </div>
+        <p className="m-0 mt-32">Made by Haardik Gupta</p>
       </div>
     </div>
   )
